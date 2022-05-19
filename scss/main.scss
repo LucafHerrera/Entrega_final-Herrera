@@ -1,0 +1,43 @@
+
+@import "commons";
+@import "navBar";
+@import "body_footer";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+font-size: 62.5%;
+}
+
+body{
+  background-image:url(../img/fondo.jpg);
+  background-attachment: fixed;
+}
+
+$paleta:(
+  'uno':#ed130c,
+  'dos':rgba(0, 0, 0, 0.5)
+  ); 
+
+.bg-rojo{
+  background-color: map-get($map:$paleta,$key:'uno');
+}
+
+.bg-dark{
+  background-color: map-get($map:$paleta,$key:'dos');
+
+}
+
+@mixin titulos($font-size,$text-align,$color){
+    font-size: $font-size;
+    text-align: $text-align;
+    color: $color;
+}
+
