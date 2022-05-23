@@ -1,0 +1,163 @@
+
+
+@mixin titulos($font-size,$text-align,$color){
+    font-size: $font-size;
+    text-align: $text-align;
+    color: $color;}
+
+.sobrenosotros__articulo{
+  width: 60%;
+  margin: 30px auto 30px auto;
+  padding: 15px;
+  box-sizing: border-box;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.img__articulo{
+   object-fit: contain;
+}
+
+.sobrenosotros__titulo{
+@include titulos(3rem,center,white)
+
+}
+.sobrenosotros__texto{
+  font-size: 1.5rem;
+  color: white;
+  margin: 10px;
+}
+
+.pie{
+  background-color:#ed130c ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pie__titulo{
+ @include titulos(3rem,center,white)
+  display: flex;
+
+
+}
+
+.pie__icon{
+  width: 50px;
+  display: flex;
+}
+
+.mapa__titulo{
+ @include titulos(3rem,center,white)
+  margin-top: 50px;
+}
+.texto__mapa{
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+.div__mapa{
+background-color: rgba(0, 0, 0, 0.5);
+filter: alpha(opacity=60);
+text-align: center;
+box-sizing: border-box;
+padding: auto;
+margin: 50px auto 20px auto ;
+display: flex;
+flex-direction: column;
+
+
+
+width: 80%;
+}
+
+.mapa__titulo2{
+  @extend .mapa__titulo; 
+}
+
+.titulo__pedido{ 
+font-size: 4rem; 
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.texto__pedido{
+  font-size: 2rem;
+  text-align: center ;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.contenedor_1{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+  padding: 30px;
+
+}
+.contenedor__logo{
+  width: 70px;
+}
+
+.contenedor_2{ 
+text-align: center;
+background-color: rgba(0, 0, 0, 0.5) ;
+margin-bottom: 50px;
+padding: 30px;
+ }
+.titulo__1{
+  font-size: 3rem;
+  color: white;
+}
+
+.texto__pedido1{
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.formulario{
+  background-color: rgba(0, 0, 0, 0.5);
+color: white;
+font-size: 2rem;
+box-sizing: border-box;
+border-style: solid;
+border-color: black;
+margin-top: 20px;
+margin-bottom: 50px;
+padding: 1.5rem;
+
+}
+
+.titulo__opinion{
+  margin-top: 30px;
+  font-size: 4rem;
+}
+
+.opinion__texto{
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px;
+
+}
+.titulo__precios{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+.tabla__precios{
+  font-size: 3rem;
+  margin: auto;
+  padding: 10px;
+   background-color: whitesmoke;
+  box-sizing: border-box;
+  border-style: solid;
+
+}
+.encabezado__header{
+  display: flex;
+  width: 90%;
+  margin: 10px auto auto auto;
+}
